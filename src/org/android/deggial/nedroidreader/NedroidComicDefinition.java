@@ -83,7 +83,7 @@ public class NedroidComicDefinition implements IComicDefinition {
 	}
 
 	public Uri getAuthorDonateUrl() {
-		return Uri.parse("http://www.topatoco.com/merchant.mvc?Screen=CTGY&Store_Code=TO&Category_Code=NED");");
+		return Uri.parse("http://www.topatoco.com/merchant.mvc?Screen=CTGY&Store_Code=TO&Category_Code=NED");
 	}
 
 }

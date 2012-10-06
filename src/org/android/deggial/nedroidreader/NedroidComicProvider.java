@@ -26,9 +26,6 @@ import android.util.Log;
 
 public class NedroidComicProvider implements IComicProvider {
 
-	private static final Pattern archiveItemPattern = Pattern.compile(
-			// group(1): comic number;
-			"href=\"http://www.gunshowcomic.com/(.+?)\"");
 
 	private static final String ARCHIVE_URL = "http://www.nedroid.com/";
 	private static final String COMIC_URL ="http://www.nedroid.com/";
@@ -58,8 +55,6 @@ public class NedroidComicProvider implements IComicProvider {
 
 		Elements posts = doc.select("#comic");
 		Log.d("nedroid","posts size "+posts.size());
-		// Log.d("gunshow","posts string"+posts.toString());
-		// Log.d("gunshow","posts src "+posts.get(0).attr("src").toString());
 		return posts.get(0).child(0).attr("src");        
 	}
 
